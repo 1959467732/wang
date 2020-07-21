@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport>
+    <title>???</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <div class="app">
+        <!-- autoplay自动播放 -->
+        <video class="hzx" autoplay="autoplay" controls="controls" width="10%" height="40%">
+            <source src="./wh/猫.mp4">
+            </source>
+        </video>
+        <div class="one">
+
+            <span class="z">祝</span>
+            <span class="n">你</span>
+            <span class="s">生</span>
+            <span class="r">日</span>
+            <span class="k">快</span>
+            <span class="l">乐</span>
+            <span class="p">！</span>
+            <span class="h">哈</span>
+            <span class="w">哈</span>
+            <span class="x">哈</span>
+        </div>
+        <div class="btn">
+
+            <a
+                href="./video.html">上一页</a>
+
+        </div>
+        <div>
+            <!-- <button @click=btn>
+                <a href="./hu.html">还有一页</a>
+            </button> -->
+        </div>
+    </div>
+
+</body>
+<script>
+    const vm = new Vue({
+        el: ".app",
+        data: {
+            url: "../html/wh/猫.mp4",
+
+        },
+        created() {
+            //    alert('哈哈，我在快手上找的')
+        },
+        methods: {
+
+        }
+    })
+</script>
+<style>
+    
+</style>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport>
+    <title>???</title>
+ </head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div class="app">
+    <!-- autoplay自动播放 -->
+<video class="hzx" autoplay="autoplay" controls="controls"  width="10%" height="40%">
+    <source src="./wh/快手.mp4">
+    </source>
+</video>
+    <div class="one">
+   
+    <span class="z">祝</span>
+    <span class="n">你</span>
+    <span class="s">生</span>
+    <span class="r">日</span>
+    <span class="k">快</span>
+    <span class="l">乐</span>
+    <span class="p">！</span>
+    <span class="h">哈</span>
+    <span class="w">哈</span>
+    <span class="x">哈</span>
+    </div>
+    <div class="btn">
+    
+        <a
+            href="https://live.kuaishou.com/u/3x5ch99h89egxim/3xbde4x5zh94utu?did=web_241b262a30a9408c9abf9b30d97ce266">更多内容</a>
+    
+    </div>
+    <div class="nn">
+        <button class="as">
+            <a href="./tu.html">图集</a>
+        </button>
+        <button class="as">
+            <a href="./donghua.html">01</a>
+        </button>
+        <button class="as">
+            <a href="./hzx.html">02</a>
+        </button>
+        <button class="as">
+            <a href="./wh/wh.html">03</a>
+        </button>
+    </div>
+</div>
+
+</body>
+<script>
+    function exitFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            }
+        }
+       
+</script>
+<script>
+   const vm =new Vue({
+       el:".app",
+       data:{
+           url:"./wh/mmexport1595275050133.mp4",
+          
+       },
+       created() {
+        //    alert('哈哈，我在快手上找的')
+        var divTest = document.getElementById("time");
+           launchIntoFullscreen(divTest);
+       },
+       methods:{
+
+       }
+    })
+</script>
+<style>
+    .nn{
+            margin: 0px 23px;
+    }
+    .as{
+        margin: 0px 21px;
+    }
+   
+    .btn{
+        padding: 39px 172px;
+    font-size: 17px;
+    }
+    a:hover{
+      color:rgba(255,255,0)
+    }
+    a{
+color: #a9752778;
+text-decoration: none;
+
+
+    }
+    .hzx{
+        width: 100%;
+    height: 100%;
+    }
+    .app{
+        width: 100%;
+        height: 100%;
+    }
+    .one{
+        font-size: 27px;
+      
+       padding-left: 29px;
+    }
+    .z{
+        color:rgba(255,0,0)
+        
+    }.n{
+color:rgba(255,165,0)
+    }
+    .s{
+color:rgba(255,255,0)
+    }
+    .r{
+color:rgba(0,255,0)
+    }
+    .k{
+color:rgba(0,127,255)
+    }.l{
+color:rgba(0,0,255)
+    }
+    .h{
+      color:rgba(139,0,255)
+    }
+    .w{
+        color: #008c8c;
+    }
+    
+</style>
+</html>
